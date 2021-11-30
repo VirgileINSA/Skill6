@@ -2,6 +2,17 @@ import time
 import random
 
 def append_time(lili,k) :
+
+	""" Function that calculates the time it needs to append a certain number of items.
+
+	Args:
+		lili (list)	: 	List of items.
+		k (int)		:	Number of time "toto" is appended in the list.
+	
+	Returns:
+		lala (list)	:	List of the initial list lili with k times "toto" added to it.
+	"""
+
     lala = lili*1
     start = time.perf_counter() # first timestamp
     
@@ -16,6 +27,17 @@ def append_time(lili,k) :
     return lala 
     
 def inserthead_time(lili,k) :
+
+	""" Function that calculates the time it needs to append a certain number of items at the begining of a list.
+
+	Args:
+		lili (list)	: 	List of items.
+		k (int)		:	Number of time "toto" is appended in the list.
+	
+	Returns:
+		lala (list)	:	List of the initial list lili with k times "toto" added to it at the begining.
+	"""
+
     lala = lili*1
     start = time.perf_counter() # first timestamp
     
@@ -30,6 +52,17 @@ def inserthead_time(lili,k) :
     return lala 
     
 def access_time(lili,k):
+
+	""" Function that calculates the time it needs to access random values in a list.
+
+	Args:
+		lili (list)	: 	List of items.
+		k (int)		:	Number of random values you want to access.
+	
+	Returns:
+		None.
+	"""
+
     lala = lili*1
     start = time.perf_counter() # first timestamp
     
@@ -42,6 +75,17 @@ def access_time(lili,k):
     print("avg time for 1 append : ", elapsed/k)
     
 def create_big_list_from_file(fichier,encodingdong) :
+
+	""" Function that creates a list from a file taking every line as item. 
+
+	Args:
+		fichier	(file path)	: 	File containing the items in line.
+		encodingdong (string)	:	Encoding of the file.
+	
+	Returns:
+		lulu (list)		:	List of the items contained in the file.
+	"""
+
     fic=open(fichier,"r", 1024, encoding= encodingdong)
     lulu=[]
     for line in fic:
